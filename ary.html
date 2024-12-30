@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><center>Array In JavaScript</center></h3>
+    <button onclick="asc()">Ascending</button>
+    <button onclick="dsc()">Descending</button>
+    <p id="arad"></p>
+    <script>
+        var insight=[20,83,1,6,52,14,31,24,16,17,3]
+        document.getElementById("arad").innerHTML=insight;
+        function asc()
+        {
+            insight.sort(function(a,b){return a-b})
+            document.getElementById("arad").innerHTML=insight;
+        }
+        function dsc()
+        {
+            insight.sort(function(a,b){return b-a})
+            document.getElementById("arad").innerHTML=insight;
+        }
+    </script>
+</body>
+</html>
