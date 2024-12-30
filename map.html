@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Map in JS</center></h1>
+    <p id="prada"></p>
+    <p id="dart"></p>
+    <script>
+        var number=[2,8,51,66,95,23,38,40,30,32,35];
+        document.getElementById("prada").innerHTML=number;
+        function dhalem(num)
+        {
+            return num+25
+        }
+        var newnumbers=number.map(dhalem);
+        document.getElementById("dart").innerHTML=newnumbers;
+    </script>
+</body>
+</html>
